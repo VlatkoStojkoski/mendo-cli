@@ -89,7 +89,7 @@ export default async function watch(filename, outputFile, taskId, options) {
 
 			console.log(chalk.blue('\nSubmitting code...\n'));
 
-			await exec(`g++ -O2 -std=c++11 -s -static -lm -W -x c++ -o ${outputFile} ${filename}`);
+			await exec(`g++ -O2 -std=c++11 -o ${outputFile} ${filename}`);
 
 			for (const [exampleI, example] of task.content.examples.entries()) {
 				const input = example.input.match(/(?<=влез\n).*/s)[0];
