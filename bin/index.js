@@ -10,7 +10,7 @@ import watch from "./watch.js";
 program
 	.name('mendo')
 	.description('This CLI utilises the Mendo API for competitve programming.')
-	.version('0.0.1');
+	.version('0.0.4');
 
 program
 	.command('login')
